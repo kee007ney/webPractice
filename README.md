@@ -25,16 +25,16 @@ app.get('', (req, res) => {
 })
 ```
 
-Project structure in this repository should look like this:
+Project structure in this repository should look like this (I did not include the cat picture from the original repository, and I renamed a couple things):
    
 📂 node_modules  
 📂 public  
 ﹂ 📂 css  
 ﹂⎻  📜 main.css  
 ﹂ 📂 img  
-﹂⎻  🖼 cat.jpg  
+~~﹂⎻  🖼 cat.jpg~~  
 ﹂ 📂 js   
-﹂⎻  📜 script.js  
+﹂⎻  📜 main.js  
 📂 views  
 ﹂ 🌍 about.ejs  
 ﹂ 🌍 index.ejs  
