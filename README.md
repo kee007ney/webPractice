@@ -1,4 +1,6 @@
-Simple web app that converts JSON into formatted JSON. Draws heavily on:  
+Simple web app that converts JSON into formatted JSON.
+Template for basic web apps, and sandbox for practicing web dev-related work.  
+Draws heavily on:  
 https://raddy.dev/blog/nodejs-setup-with-html-css-js-ejs/ (node project stuff)  
 and  
 https://www.youtube.com/watch?app=desktop&v=s38oGpnnQo8 (html/css/js project stuff).  
