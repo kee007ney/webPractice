@@ -1,7 +1,12 @@
-Simple web app that converts JSON into formatted JSON. Draws heavily on:
-https://raddy.dev/blog/nodejs-setup-with-html-css-js-ejs/ (node project stuff)
-and
-https://www.youtube.com/watch?app=desktop&v=s38oGpnnQo8 (html/css/js project stuff).
+Simple web app that converts JSON into formatted JSON. Draws heavily on:  
+https://raddy.dev/blog/nodejs-setup-with-html-css-js-ejs/ (node project stuff)  
+and  
+https://www.youtube.com/watch?app=desktop&v=s38oGpnnQo8 (html/css/js project stuff).  
+
+Note that there is already a repo for the node basic setup stuff (which I didn't realize until after I'd set my own up).  
+For reference, it's here:  
+https://github.com/RaddyTheBrand/NodeJS_Setup_With_HTML_CSS_JS_and_EJS
+
 
 # Simple Web App using node.js
 This project uses vanila JavaScript, CSS, and HTML to create a simple web page that takes JSON as input and produces formatted JSON as output.
@@ -39,15 +44,16 @@ Project structure in this repository should look like this:
 📜 package-json  
 
 ### To run:
-1) Install express (application framework) and ejs (templating tool to generate html from plain JavaScript (view engine)):
+1) Install express (application framework) and ejs (templating tool to generate html from plain JavaScript (view engine)):  
 `npm install express ejs`
 
-2) Install nodemon (automatically restarts the node.js server whenever a change is saved in the project directory):
+2) Install nodemon (automatically restarts the node.js server whenever a change is saved in the project directory):  
 `npm install nodemon --save-dev`
 
-3) Add this line to package.json:
+3) Add this line to package.json:  
 `"start": "nodemon app.js"`
-(Full JSON should look something like this):
+
+(Full JSON should look something like this):  
 ```
 {
   "name": "Learning NodeJS",
@@ -70,7 +76,7 @@ Project structure in this repository should look like this:
 }
 ```
 
-4) Save everything and run it:
+4) Save everything and run it:  
 `npm start`
 
 Navigate to http://localhost:5000 in your browser and you should be able to see the project.
