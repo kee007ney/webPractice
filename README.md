@@ -9,6 +9,8 @@ Note that there is already a repo for the node basic setup stuff (which I didn't
 For reference, it's here:  
 https://github.com/RaddyTheBrand/NodeJS_Setup_With_HTML_CSS_JS_and_EJS
 
+favicon.ico file comes from here:
+https://favicon.io/emoji-favicons/alien-monster
 
 # Simple Web App using node.js
 This project uses vanila JavaScript, CSS, and HTML to create a simple web page that takes JSON as input and produces formatted JSON as output.
