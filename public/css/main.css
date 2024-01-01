@@ -33,17 +33,24 @@ body {
      color: aliceblue;
 }
 
+.controls {
+     box-sizing: border-box;
+}
+
 .ctl-btn {
      background: #299d17;
      color: aliceblue;
      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
      font-weight: bold;
      width: 100%;
-     padding: 14px 8px;
+     padding: 18px 8px;
      border: none;
      outline: none;
      border-radius: 5px;
      cursor: pointer;
+     margin-top: 5px;
+     margin-bottom: 5px;
+     box-sizing: border-box;
 }
 
 .ctl-btn:hover {
