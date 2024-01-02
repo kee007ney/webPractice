@@ -7,6 +7,7 @@ const exampleButton = document.querySelector(".btn-example");
 formatButton.addEventListener("click", () => {
      const formatted = JSON.stringify(JSON.parse(textIn.value), null, 3);
      textOut.value = formatted;
+//     console.log ("Formatted text!");
 })
 
 stringButton.addEventListener("click", () => {
