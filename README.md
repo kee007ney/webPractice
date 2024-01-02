@@ -85,3 +85,5 @@ Project structure in this repository should look like this (I did not include th
 
 Navigate to http://localhost:5000 in your browser and you should be able to see the project.
 Change the port in app.js (`const port = 5000`) to whatever you like if you prefer a different port number.
+
+I may have used `npm init` at some point, I can't remember if it was part of this project or not.
