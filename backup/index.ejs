@@ -12,28 +12,25 @@
         <h1 class="mb-4">Blog Articles</h1>
         <a href="/articles/new" class="btn btn-success">New Article</a>
 
-<!--
-        <% const samples = [{myFirstThing: "someValue", mySecondThing: "someOtherValue"}, {myFirstThing: "Whatever", mySecondThing: "Blah"}];
+
+        <% const samples = [{myItem: "myValue1"}, {myItem: "myValue2"}];
         samples.forEach (sample => { %>
             <div class="card">
-                <%= sample.myFirstThing; %>
+                <%= sample.myItem %>
             </div>
-        <% }); %>
+        <% }) %>
 
--->
 
         <% articles.forEach(article => { %>
         <div class="card mt-4">
-            <div class="card-body">
-                <h4 class="card-title"> <%= article.title %></h4>
-                <div class="card-subtitle text-muted mb-2">
-                    <%= article.createdAt.toLocaleDateString() %>
-
-                </div>
-            </div>
+            <%= article.title %>
         </div>
         <% }) %>
     </div>
+    <!--
+    Index baby
+    <img src="img/cat.jpg" alt="cat">
+    -->
 
 </body>
 </html>

@@ -26,3 +26,6 @@ exampleButton.addEventListener("click", () => {
       }";
      textIn.value = example;
 })
+
+//const fruits = ['apple', 'banana', 'orange'];
+//fruits.forEach (console.log(fruit, i));
