@@ -1,5 +1,6 @@
 const express = require ('express');
 const mongoose = require ('mongoose');
+const Article = require ('./models/article');
 const articleRouter = require ('./routes/articles');
 const app = express();
 const port = 5000;
@@ -46,6 +47,12 @@ app.get ('/', (req, res) => {
      res.render ('articles/index', {articles: articles });
 })
 */
+
+app.get ('/', async (req, res) => {
+     const articles = await Article.find ().sort ({
+     createdAt: 'desc' });
+     res.render ('articles/index', {articles: articles });
+});
 
 app.listen(port, function (err) {
      if (err) throw err;
