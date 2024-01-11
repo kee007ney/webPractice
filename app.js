@@ -2,10 +2,20 @@ const express = require ('express');
 const mongoose = require ('mongoose');
 const Article = require ('./models/article');
 const articleRouter = require ('./routes/articles');
+const methodOverride = require ('method-override');
 const app = express();
 const port = 5000;
 
-mongoose.connect ('mongodb://localhost/blog');
+mongoose.connect ('mongodb://localhost/blog'), {
+     useCreateIndex: true
+};
+
+app.set ('view engine', 'ejs');
+app.set ('views', './views');
+app.use (methodOverride ('_method'));
+
+app.use (express.urlencoded ({ extended: false}));
+app.use (express.static ('public'));
 
 /*
 mongoose.connect ('mongodb://localhost/blog', {
@@ -23,14 +33,6 @@ MongoClient.connect(url, function(err, db) {
   db.close();
 });
 */
-
-app.set ('view engine', 'ejs');
-app.set ('views', './views');
-
-app.use (express.urlencoded ({ extended: false}));
-app.use (express.static ('public'));
-
-
 
 /* Testing
 app.get ('/', (req, res) => {
